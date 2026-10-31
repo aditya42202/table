@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multiplication</title>
+</head>
+<body>
+    <main>
+        <h1>Multiplication Tables</h1>
+
+        <form id="table-form">
+            <label for="table-count">Kitne tables print karne hain?</label>
+            <input id="table-count" name="table-count" type="number" min="1" step="1" required>
+
+            <label for="table-length">Har table kahan tak print karna hai?</label>
+            <input id="table-length" name="table-length" type="number" min="1" step="1" required>
+
+            <button type="submit">Tables dikhayein</button>
+            <p id="form-error" role="alert" aria-live="polite"></p>
+        </form>
+
+        <section id="table-results" class="table-container" aria-live="polite"></section>
+    </main>
+
+    <script src="./script.js"></script>
+</body>
+</html>
